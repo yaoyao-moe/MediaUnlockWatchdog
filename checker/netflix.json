@@ -1,0 +1,13 @@
+{
+    "name":"netflix",
+    "description":"netflix",
+    "test_url":"https://www.netflix.com/title/80018499",
+    "failed_type":"text",
+    "failed_text":[
+        "page-404",
+        "page-not-found",
+        "NSEZ-403"
+    ],
+    "region_code_type": "redirect_url",
+    "region_code_script": "redirect_url.split('/')[3].split('-')[0]" 
+}

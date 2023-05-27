@@ -1,0 +1,16 @@
+{
+    "name": "openai",
+    "description": "ChatGPT and Others",
+    "test_url": "https://chat.openai.com",
+    "failed_type": "text",
+    "failed_text": [
+        "Sorry, you have been blocked"
+    ],
+    "success_type": "header",
+    "success_header": {
+        "cf-mitigated": "challenge"
+    },
+    "region_code_type": "url",
+    "region_code_url": "https://chat.openai.com/cdn-cgi/trace",
+    "region_code_script": "response.text.split('loc=')[1].strip().splitlines()[0]"
+}
