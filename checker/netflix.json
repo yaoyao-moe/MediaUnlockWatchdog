@@ -1,6 +1,6 @@
-{
-    "name":"netflix",
-    "description":"netflix",
+[{
+    "name":"Netflix Homemade",
+    "description":"Netflix Homemade",
     "test_url":"https://www.netflix.com/title/80018499",
     "failed_type":"text",
     "failed_text":[
@@ -10,4 +10,24 @@
     ],
     "region_code_type": "redirect_url",
     "region_code_script": "redirect_url.split('/')[3].split('-')[0]" 
-}
+},
+{
+    "name": "Netflix Other",
+    "description": "Netflix Other",
+    "test_urls": [
+        "https://www.netflix.com/title/70143836",
+        "https://www.netflix.com/title/80027042",
+        "https://www.netflix.com/title/70140425",
+        "https://www.netflix.com/title/70283261",
+        "https://www.netflix.com/title/70143860",
+        "https://www.netflix.com/title/70202589"
+    ],
+    "failed_type": "text",
+    "failed_text": [
+        "page-404"
+    ],
+    "failed_type_logic": "and",
+    "region_code_type": "redirect_url",
+    "region_code_script": "redirect_url.split('/')[3].split('-')[0]" 
+}]
+

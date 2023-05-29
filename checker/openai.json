@@ -1,5 +1,5 @@
 {
-    "name": "openai",
+    "name": "ChatGPT",
     "description": "ChatGPT and Others",
     "test_url": "https://chat.openai.com",
     "failed_type": "text",
